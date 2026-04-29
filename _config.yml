@@ -1,4 +1,31 @@
-title: 我的个人博客
+title: 像素小栈 🎨
 author: 你的名字
-description: 日常学习与生活记录
+description: 像素画创作 | 日常学习与生活记录
 theme: minima
+
+# 自定义像素风美化配置
+ minima:
+  # 字体设置（像素风专用字体+清晰无衬线字体）
+  font:
+    heading: '"Press Start 2P", "VT323", monospace'  # 标题像素字体
+    body: '"Inter", "Microsoft YaHei", sans-serif'    # 正文清晰字体
+    size:
+      base: 16px       # 基础字体大小
+      heading: 22px    # 标题字体大小
+      small: 14px      # 小字大小
+
+  # 轻快配色方案（低饱和度马卡龙+像素风经典色）
+  colors:
+    # 背景色
+    background: "#fdfdfd"       # 纯白主背景（清爽）
+    header-bg: "#e8f4fd"        # 浅蓝顶部背景
+    footer-bg: "#f0f7ff"        # 浅蓝底部背景
+    
+    # 文字色
+    text: "#333333"             # 深灰正文（护眼）
+    heading: "#4a6cf3"          # 清新蓝标题
+    link: "#ff6b8b"             # 柔粉链接（点击色）
+    link-hover: "#f34a6c"       # 链接悬停加深
+    
+    # 边框/分割线
+    border: "#d1e7ff"           # 浅蓝边框

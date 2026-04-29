@@ -1,0 +1,76 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ========== 像素风轻快配色 ========== */
+$bg-color: #fdfdfd;        // 主背景：纯白清爽
+$header-bg: #e8f4fd;       // 顶部栏：浅蓝
+$footer-bg: #f0f7ff;       // 底部栏：淡蓝
+$text-color: #333333;      // 正文：深灰护眼
+$heading-color: #4a6cf3;   // 标题：清新蓝
+$link-color: #ff6b8b;      // 链接：柔粉
+$link-hover: #f34a6c;      // 链接悬停：加深柔粉
+$border-color: #d1e7ff;    // 边框：浅蓝
+
+/* ========== 全局基础样式 ========== */
+body {
+  background-color: $bg-color !important;
+  font-family: "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $text-color;
+}
+
+/* ========== 标题像素风格 ========== */
+h1, h2, h3, h4 {
+  font-family: "VT323", monospace; // 像素字体（自动 fallback）
+  color: $heading-color;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 0px rgba($header-bg, 0.8);
+}
+
+/* ========== 链接样式 ========== */
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+a:hover {
+  color: $link-hover;
+  padding-left: 2px;
+}
+
+/* ========== 顶部导航栏美化 ========== */
+.site-header {
+  background-color: $header-bg;
+  border-bottom: 3px solid $heading-color !important;
+  padding: 15px 0;
+}
+.site-title {
+  font-family: "VT323", monospace;
+  color: $heading-color;
+}
+
+/* ========== 底部栏美化 ========== */
+.site-footer {
+  background-color: $footer-bg;
+  border-top: 2px solid $border-color;
+  padding: 20px 0;
+}
+
+/* ========== 文章卡片美化 ========== */
+.post, .page-content {
+  background: white;
+  border: 2px solid $border-color;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* ========== 像素画专属：轻微像素边框 ========== */
+.post-header, .post-content {
+  border-left: 4px solid $heading-color;
+  padding-left: 15px;
+}

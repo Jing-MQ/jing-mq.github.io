@@ -1,46 +1,69 @@
 {% raw %}
-<head>
-  {% include head.html %}
-  <style>
-    /* 在这里写你的所有自定义样式，下面是给你配好的像素风基础版 */
-    body {
-      background-color: #fdfdfd !important; /* 主背景：纯白清爽 */
-      font-family: "Microsoft YaHei", sans-serif;
-      font-size: 16px;
-      line-height: 1.7;
-      color: #333333 !important;
-    }
+{% include head.html %}
 
-    h1, h2, h3, h4 {
-      color: #4a6cf3 !important; /* 标题：清新蓝 */
-      font-weight: normal !important;
-      letter-spacing: 1px;
-    }
+<style>
+/* ========== 修正：隐藏顶部多余的代码文本 ========== */
+body > *:first-child {
+  display: none;
+}
 
-    a {
-      color: #ff6b8b !important; /* 链接：柔粉 */
-      text-decoration: none;
-    }
+/* ========== 像素风轻快配色 ========== */
+body {
+  background-color: #fdfdfd !important; /* 纯白清爽背景 */
+  color: #333333 !important; /* 正文：深灰护眼 */
+  font-family: "Microsoft YaHei", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
-    a:hover {
-      color: #f34a6c !important; /* 链接悬停：加深柔粉 */
-    }
+/* ========== 标题像素风格 ========== */
+h1, h2, h3, h4 {
+  color: #4a6cf3 !important; /* 标题：清新蓝 */
+  font-family: "VT323", monospace !important; /* 像素字体 */
+  font-weight: normal !important;
+  letter-spacing: 1px !important;
+  margin: 0 0 16px 0 !important;
+}
 
-    .site-header {
-      background-color: #e8f4fd !important; /* 顶部栏：浅蓝 */
-      border-bottom: 3px solid #4a6cf3 !important;
-    }
+/* ========== 链接样式 ========== */
+a {
+  color: #ff6b8b !important; /* 链接：柔粉 */
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+}
+a:hover {
+  color: #f34a6c !important; /* 链接悬停：加深柔粉 */
+  padding-left: 2px !important;
+}
 
-    .site-footer {
-      background-color: #f0f7ff !important; /* 底部栏：淡蓝 */
-      border-top: 2px solid #d1e7ff !important;
-    }
+/* ========== 顶部导航栏美化 ========== */
+.site-header {
+  background-color: #e8f4fd !important; /* 顶部栏：浅蓝 */
+  border-bottom: 3px solid #4a6cf3 !important;
+  padding: 15px 20px !important;
+}
 
-    .post, .page-content {
-      border: 2px solid #d1e7ff !important;
-      border-radius: 8px;
-      padding: 20px;
-    }
-  </style>
-</head>
+/* ========== 底部栏美化 ========== */
+.site-footer {
+  background-color: #f0f7ff !important; /* 底部栏：淡蓝 */
+  border-top: 2px solid #d1e7ff !important;
+  padding: 20px !important;
+  margin-top: 40px !important;
+}
+
+/* ========== 文章卡片美化 ========== */
+.post, .page-content {
+  background: white !important;
+  border: 2px solid #d1e7ff !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+  margin: 20px auto !important;
+  max-width: 800px !important;
+}
+
+/* ========== 引入像素字体 ========== */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+</style>
 {% endraw %}
